@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.telegram{
+    padding: 50px;
+    margin: 100 auto;
+    background-color: aqua;
+}

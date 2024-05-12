@@ -4,7 +4,7 @@ let ws = new WebSocket('wss://demo.piesocket.com/v3/channel_123?api_key=VCXCEuvh
 let btn = document.querySelector('button')
 let inp = document.querySelector('input')
 let ul = document.querySelector('ul')
-let messages = []
+
 
 ws.onopen = (e) => { 
     console.log(e, 'opened');
@@ -18,6 +18,8 @@ ws.onmessage = (e) => {
     messages.push(m)
     render(messages)
 }
+
+let messages = []
 
 function render(messes) {
     ul.innerHTML = ''
